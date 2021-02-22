@@ -15,7 +15,7 @@ Going over advanced ES6 / Typescript features and their usage in React
 http://nztodo.herokuapp.com/api/tasks/?format=json
 
 
-```
+```js
 POST
 http://nztodo.herokuapp.com/api/tasks/
 
@@ -26,17 +26,17 @@ headers: {
 body: { title: 'sdfds', description: 'dsf', group: 'microfocus'}
 ```
 
-```
+```sh
 > npx create-react-app server-tutorial --template=typescript
 ```
 
 add 2 components
 
-```
+```html
 <TodoList />
 ```
 
-```
+```html
 <ul><li>{title}</li></ul>
 ```
 
@@ -44,11 +44,11 @@ use react query
 
 https://react-query.tanstack.com/
 
-```
+```html
 <CreateTodo />
 ```
 
-```
+```html
 <button>create new todo</button>
 ```
 when creating a new item you can tell the TodoList to refetch
@@ -70,7 +70,7 @@ when creating a new item you can tell the TodoList to refetch
 - The `Parent` will place the child passing `title` property and `children`
 
 Parent.js
-```
+```html
 <Child title="hello world">
 	<p>
 		Some text lurem ipsum
